@@ -1,0 +1,24 @@
+<view class="container container-fill">
+	<view class="scroll-fullpage" bindtouchstart="scrollTouchstart" bindtouchmove="scrollTouchmove" bindtouchend="scrollTouchend" style="margin-top: {{margintop}}px">
+		<view class="section" style="background: #3399FF;">
+			<text class="section-maintitle">item1</text>
+		</view>
+		<view class="section" style="background: #00CC66;">
+						<text class="section-maintitle">item2</text>
+		</view>
+		<view class="section" style="background: #33CCCC;">			
+    <text class="section-maintitle">item3</text>
+		</view>
+		<view class="section" style="background: #6699FF;">
+						<text class="section-maintitle">item4</text>
+	</view>
+		<view class="section" style="background: #9966FF;">
+					<text class="section-maintitle">item5</text>
+    </view>
+	</view>
+  <view class='sliderBox' style='margin-top:{{-sliderHeight}}px'>
+  <view wx:for="{{sliderlist}}"  class="slider">
+      <i class="sliderItem {{scrollindex==index ? 'active':''}}" type="circle" ></i>
+  </view>
+  </view>
+</view>
